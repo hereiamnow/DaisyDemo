@@ -9,9 +9,14 @@ export default function Home() {
             <p className="py-6 text-lg">
             A clean, modern starting point for your next project, built with Next.js, Tailwind CSS, and the beautiful components of DaisyUI. Explore a showcase of components and switch between themes with ease.
             </p>
-            <Link href="/components" className="btn btn-primary btn-lg">
-            Explore Components
-            </Link>
+            <div className="flex gap-4 justify-center">
+              <Link href="/components" className="btn btn-primary btn-lg">
+                Explore Components
+              </Link>
+               <Link href="/themes" className="btn btn-secondary btn-lg">
+                Explore Themes
+              </Link>
+            </div>
         </div>
       </div>
     </main>
