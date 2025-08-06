@@ -10,10 +10,10 @@ export default function Home() {
             A clean, modern starting point for your next project, built with Next.js, Tailwind CSS, and the beautiful components of DaisyUI. Explore a showcase of components and switch between themes with ease.
             </p>
             <div className="flex gap-4 justify-center">
-              <Link href="/components" className="btn btn-primary btn-lg">
+              <Link href="/components" className="btn btn-primary">
                 Explore Components
               </Link>
-               <Link href="/themes" className="btn btn-secondary btn-lg">
+               <Link href="/themes" className="btn btn-secondary">
                 Explore Themes
               </Link>
             </div>

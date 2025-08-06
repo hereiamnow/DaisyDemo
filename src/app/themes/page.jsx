@@ -25,14 +25,10 @@ export default function ThemesPage() {
   return (
     <div className="bg-base-100 min-h-screen p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
-        <header className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4">
-            <Link href="/" className="btn btn-ghost">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Home
-            </Link>
-             <h1 className="text-3xl font-bold text-center">Theme Showcase</h1>
-             <div className="w-48"></div>
-        </header>
+        <div className="text-center mb-8">
+             <h1 className="text-3xl font-bold">Theme Showcase</h1>
+             <p className="text-base-content/70 mt-2">Click a button to set the theme for the entire app.</p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {themes.map((theme) => (
@@ -56,10 +52,12 @@ export default function ThemesPage() {
                 </div>
 
                 <div className="text-xs font-medium text-base-content/70 mt-4">Typography Preview</div>
+                <p className="text-base-content/50 text-xs">
+                  The quick brown fox jumps over the lazy dog.
+                </p>
                 <p className="text-base-content/70 text-sm">
                   The quick brown fox jumps over the lazy dog.
                 </p>
-                
                  <div className="card-actions justify-end mt-4">
                   <button className="btn btn-primary btn-sm" onClick={() => setTheme(theme)}>
                     Set Theme
