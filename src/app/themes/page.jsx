@@ -12,6 +12,13 @@ const themes = [
   "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"
 ];
 
+const colorMapping = [
+  { name: 'Primary', class: 'bg-primary' },
+  { name: 'Secondary', class: 'bg-secondary' },
+  { name: 'Accent', class: 'bg-accent' },
+  { name: 'Neutral', class: 'bg-neutral' },
+];
+
 export default function ThemesPage() {
   const { setTheme } = useTheme();
 
@@ -39,23 +46,12 @@ export default function ThemesPage() {
                   <Palette className="w-5 h-5" />
                   {theme}
                 </h2>
-                <div className="flex flex-col gap-2 mt-4">
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-primary"></div>
-                    <span className="text-base-content">Primary</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-secondary"></div>
-                    <span className="text-base-content">Secondary</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-accent"></div>
-                    <span className="text-base-content">Accent</span>
-                  </div>
-                   <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-neutral"></div>
-                    <span className="text-base-content">Neutral</span>
-                  </div>
+                <div className="flex justify-around gap-2 mt-4">
+                   {colorMapping.map((color) => (
+                    <div key={color.name} className="tooltip" data-tip={color.name}>
+                        <div className={`w-8 h-8 rounded-full ${color.class} border-2 border-base-300`}></div>
+                    </div>
+                  ))}
                 </div>
                  <div className="card-actions justify-end mt-4">
                   <button className="btn btn-primary btn-sm" onClick={() => setTheme(theme)}>
