@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Palette } from 'lucide-react';
 import { useTheme } from '@/components/ThemeProvider';
 
 const themes = [
@@ -35,7 +35,10 @@ export default function ThemesPage() {
               className="card bg-base-100 shadow-xl border border-base-300 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             >
               <div className="card-body">
-                <h2 className="card-title capitalize text-base-content">{theme}</h2>
+                <h2 className="card-title capitalize text-base-content flex items-center gap-2">
+                  <Palette className="w-5 h-5" />
+                  {theme}
+                </h2>
                 <div className="flex flex-col gap-2 mt-4">
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-primary"></div>
