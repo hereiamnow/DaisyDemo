@@ -46,9 +46,7 @@ export default function ThemesPage() {
                   <Palette className="w-5 h-5" />
                   {theme}
                 </h2>
-                <p className="text-base-content/70 text-sm mt-2">
-                  The quick brown fox jumps over the lazy dog.
-                </p>
+                
                 <div className="flex justify-around gap-2 mt-4">
                    {colorMapping.map((color) => (
                     <div key={color.name} className="tooltip" data-tip={color.name}>
@@ -56,6 +54,12 @@ export default function ThemesPage() {
                     </div>
                   ))}
                 </div>
+
+                <div className="text-xs font-medium text-base-content/70 mt-4">Typography Preview</div>
+                <p className="text-base-content/70 text-sm">
+                  The quick brown fox jumps over the lazy dog.
+                </p>
+                
                  <div className="card-actions justify-end mt-4">
                   <button className="btn btn-primary btn-sm" onClick={() => setTheme(theme)}>
                     Set Theme
