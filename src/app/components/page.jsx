@@ -49,14 +49,15 @@ export default function ComponentsPage() {
               <h2 className="card-title">Buttons</h2>
               <div className="flex flex-wrap gap-2 items-center">
                 <button className="btn">Default</button>
-                <button className="btn btn-primary">Primary</button>
-                <button className="btn btn-secondary">Secondary</button>
-                <button className="btn btn-accent">Accent</button>
-                <button className="btn btn-ghost">Ghost</button>
-                <button className="btn btn-link">Link</button>
+                <button className="btn btn-primary btn-sm">Primary</button>
+                <button className="btn btn-secondary btn-sm">Secondary</button>
+                <button className="btn btn-accent btn-sm">Accent</button>
+                <button className="btn btn-ghost btn-sm">Ghost</button>
+                <button className="btn btn-link btn-sm">Link</button>
               </div>
               <div className="divider">Sizes</div>
               <div className="flex flex-wrap gap-2 items-center">
+                <button className="btn btn-primary btn-xs">Extra Small</button>
                 <button className="btn btn-primary btn-sm">Small</button>
                 <button className="btn btn-primary btn-md">Medium</button>
                 <button className="btn btn-primary btn-lg">Large</button>
