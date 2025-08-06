@@ -46,6 +46,9 @@ export default function ThemesPage() {
                   <Palette className="w-5 h-5" />
                   {theme}
                 </h2>
+                <p className="text-base-content/70 text-sm mt-2">
+                  The quick brown fox jumps over the lazy dog.
+                </p>
                 <div className="flex justify-around gap-2 mt-4">
                    {colorMapping.map((color) => (
                     <div key={color.name} className="tooltip" data-tip={color.name}>
