@@ -47,13 +47,19 @@ export default function ComponentsPage() {
           <div className="card bg-base-200 shadow-xl transition-all duration-300 hover:scale-105">
             <div className="card-body">
               <h2 className="card-title">Buttons</h2>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 items-center">
                 <button className="btn">Default</button>
                 <button className="btn btn-primary">Primary</button>
                 <button className="btn btn-secondary">Secondary</button>
                 <button className="btn btn-accent">Accent</button>
                 <button className="btn btn-ghost">Ghost</button>
                 <button className="btn btn-link">Link</button>
+              </div>
+              <div className="divider">Sizes</div>
+              <div className="flex flex-wrap gap-2 items-center">
+                <button className="btn btn-primary btn-sm">Small</button>
+                <button className="btn btn-primary btn-md">Medium</button>
+                <button className="btn btn-primary btn-lg">Large</button>
               </div>
             </div>
           </div>
